@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+}
+
+nav {
+	background-color: black;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.nav li {
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 10px;
+	height: 100%;
+}
+
+.nav li a {
+	color: white;
+	display: block;
+}
+
+.home a:hover {
+	color: yellow;
+}
+
+.about a:hover, li.about:hover {
+	background-color: tomato;
+}
+
+.contact a:hover {
+	
+	padding-left: 5px;
+	padding-right: 5px;
+	
+	/*background-color: goldenrod;*/
+}
