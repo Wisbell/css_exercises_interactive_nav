@@ -15,17 +15,25 @@ nav {
     margin: 0
     padding 0;
     background-color: black;
-    height: 4em;
+    height: 10vh;
 }
 
 nav ul {
     margin: 0;
-    padding-top: 1.5em;
+    height: 100%;
+
+    /* This display property allows you to center li children vertically*/
+    display: table;
 }
 
 nav li {
-    display: inline;
-    padding: .5em .5em .5em .5em;
+    list-style-type: none;
+
+    /* The below 2 properties center li vertically in the partent ul table*/
+    display: table-cell;
+    vertical-align: middle;
+
+    height: 100%;
 
 }
 
@@ -34,4 +42,19 @@ nav a {
     display: inline-block;
 
     color: white;
+}
+
+
+.home:hover {
+    color: tomato;
+}
+
+.about:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.contact:active {
+    padding-left: 5px;
+    padding-right: 5px;
 }
